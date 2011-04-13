@@ -1,0 +1,51 @@
+
+QGroupBox > QRadioButton, QGroupBox > QCheckBox, QGroupBox > QPushButton{
+font: bold "Times New Roman";
+font-size: 20px;
+color:white;
+background-repeat:no-repeat;
+border:none;
+}
+
+QGroupBox > QRadioButton, QGroupBox > QCheckBox{
+background-image:url(background.png);
+}
+
+
+QGroupBox > QRadioButton::indicator, GroupBox > QCheckBox::indicator{
+height:58px;
+width:54px;
+background-repeat: no-repeat;
+}
+
+QGroupBox> QRadioButton::indicator::unchecked, QGroupBox> QCheckBox::indicator::unchecked{
+background-image:url(uncheckedButton.png);
+}
+
+
+QGroupBox > QRadioButton::indicator::checked, QGroupBox > QCheckBox::indicator::checked{
+background-image:url(greenButton.png);
+}
+
+QGroupBox > QPushButton{
+background-image:url(unpressedBackground.png);
+}
+
+QGroupBox > QPushButton:pressed, QGroupBox > QPushButton:checked{
+background-image:url(pressedBackground.png);
+}
+
+QGroupBox{
+background-clip:margin;
+background-color:blue;
+border: 2px solid white;
+
+font-size: 20px;
+color:white;
+margin:15px;
+}
+
+QGroupBox::title{
+subcontrol-position: top center;
+subcontrol-origin:margin;
+}
